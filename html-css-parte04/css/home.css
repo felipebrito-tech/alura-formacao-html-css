@@ -7,7 +7,13 @@ body {
 }
 
 .principal{
-	padding: 30px;
+	padding: 3em 0;
+    background: #FEFEFE;
+}
+
+.principal-conteudo {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .principal p {
@@ -40,6 +46,7 @@ body {
 
 .mapa {
     padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
 }
 
 .mapa p {
@@ -47,8 +54,13 @@ body {
     text-align: center;
 }
 
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
 .beneficios {
-    background: #FFFFFF;
+    background: #888888;
     padding: 3em;
     clear: left;
 }
@@ -67,6 +79,10 @@ body {
 .itens {
     line-height: 1.5em;
 }
+
+.itens:before {
+    content: "🟌";
+} 
 
 .itens:first-child {
     font-weight: bold;

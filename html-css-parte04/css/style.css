@@ -35,13 +35,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/***** MAIN *****/
-
-main {
-	width: 940px;
-	margin: 0 auto;
-}
-
 /***** FOOTER *****/
 
 footer {
