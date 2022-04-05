@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
 
         <title>Contato - Barbearia Alura</title>
 
@@ -24,73 +25,85 @@
             </div>
         </header>
         <main>
-            <form>
-                <label for="nomeesobrenome">Nome e Sobrenome</label>
-                <input type="text" name="nomeesobrenome id="nomeesobrenome" class="input-padrao" required>
-
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
-
-                <label for="telefone">Telefone</label>
-                <input type="tel" name="telefone" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
-
-                <fieldset>
-                    <legend>Como prefere o nosso contato?</legend>
-
-                    <label for="radio-email">
-                        <input type="radio" value="email" id="radio-email" name="contato"> E-mail
+            <section>
+                <form class="contato-form">
+                    <fieldset>
+                        <label for="nomeesobrenome">Nome e Sobrenome</label>
+                        <input type="text" name="nomeesobrenome id="nomeesobrenome" class="input-padrao" required>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Como prefere o nosso contato?</legend>
+                        
+                        <label for="radio-email">
+                            <input type="radio" value="email" id="radio-email" name="contato"> E-mail
+                        </label>
+                        
+                        <label for="radio-telefone">
+                            <input type="radio" value="telefone" id="radio-telefone" name="contato"> Telefone
+                        </label>
+                        
+                        <label for="radio-whatsapp">
+                            <input type="radio" value="whatsapp" id="radio-whatsapp" name="contato" checked> WhatsApp
+                        </label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Qual horário você prefere ser atendido?</legend>
+                        <select name="horario" id="horario" class="input-padrao">
+                            <option value="manha">Manhã</option>
+                            <option value="noite">Tarde</option>
+                            <option value="noite">Noite</option>
+                        </select>
+                    </fieldset>
+                    
+                    <label class="checkbox">
+                        <input type="checkbox" name="novidades" checked> Gostaria de receber nossas novidades por email?
                     </label>
                     
-                    <label for="radio-telefone">
-                        <input type="radio" value="telefone" id="radio-telefone" name="contato"> Telefone
-                    </label>
-                    
-                    <label for="radio-whatsapp">
-                        <input type="radio" value="whatsapp" id="radio-whatsapp" name="contato" checked> WhatsApp
-                    </label>
-                </fieldset>
+                    <input type="submit" value="Enviar Formulário" class="enviar">
+                </form>
+            </section>
 
-                <fieldset>
-                    <legend>Qual horário você prefere ser atendido?</legend>
-                    <select name="horario" id="horario">
-                        <option value="manha">Manhã</option>
-                        <option value="noite">Tarde</option>
-                        <option value="noite">Noite</option>
-                    </select>
-                </fieldset>
-
-                <label class="checkbox">
-                    <input type="checkbox" name="novidades" checked> Gostaria de receber nossas novidades por email?
-                </label>
-
-                <input type="submit" value="Enviar Formulário" class="enviar">
-            </form>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                </tbody>
-            </table>
+            <section>
+                <table class="horarios">
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </main>
         <footer>
             <img src="imagens/logo-branco.png" alt="Logo Barbearia Alura Rodapé">

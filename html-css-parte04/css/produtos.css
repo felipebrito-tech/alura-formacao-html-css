@@ -1,5 +1,5 @@
 .produtos {
-    width: 940px;
+    width: 90%;
     margin: 0 auto;
     padding: 50px 0;
 }
@@ -9,7 +9,7 @@
     text-align: center;
     width: 30%;
     vertical-align: top;
-    margin: 0 1.5%;
+    margin: 0 0.5em;
     padding: 30px 20px;
     box-sizing: border-box;
     border: 2px solid #000000;
@@ -29,16 +29,46 @@
 }
 
 .produtos h2 {
-    font-size: 30px;
+    font-size: 2em;
     font-weight: bold;
+}
+
+.produto-imagem {
+    width: 100%;
 }
 
 .produto-descricao {
-    font-size: 18px;
+    font-size: 1.5em;
 }
 
 .produto-preco {
-    font-size: 20px;
+    font-size: 1.7em;
     font-weight: bold;
     margin-top: 10px;
+}
+
+/***** MOBILE (480px)  *****/
+
+@media screen and (max-width: 480px) {
+    .produtos {
+        width: auto;
+    }
+
+    .produtos li {
+        display: block;
+        width: 80%;
+        margin: 5% auto;
+    }
+    
+    .produtos h2 {
+        font-size: 2.5em;
+    }
+
+    .produto-descricao {
+        font-size: 2em;
+    }
+
+    .produto-preco {
+        font-size: 2.2em;
+    }
 }

@@ -6,7 +6,7 @@ header {
 }
 
 .caixa {
-    width: 940px;
+    width: 90%;
     position: relative;
     margin: 0 auto;
 }
@@ -26,7 +26,7 @@ nav a {
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.38em;
     text-decoration: none;
 }
 
@@ -47,4 +47,20 @@ footer {
     color: #FFFFFF;
     font-size: 13px;
     margin-top: 20px;
+}
+
+/***** MOBILE (480px)  *****/
+
+@media screen and (max-width: 480px) {
+    .caixa {
+        width: auto;
+    }
+
+    h1, nav {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
 }
